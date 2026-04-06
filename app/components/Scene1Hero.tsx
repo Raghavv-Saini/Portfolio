@@ -21,7 +21,7 @@ export function Scene1Hero() {
   const celestialOpacity = useTransform(scrollYProgress, [0, 1], [0.4, 0.1]);
 
   return (
-    <section ref={ref} className="relative h-screen flex items-center justify-center overflow-hidden px-6 sm:px-8 md:px-10 lg:px-12">
+    <section ref={ref} className="relative h-screen flex items-center justify-center overflow-hidden px-[5vw] md:px-10 lg:px-12">
       {/* Large Gradient Celestial Object (Planet/Black Hole) */}
       <motion.div
         style={{ scale, opacity: celestialOpacity }}
@@ -42,7 +42,7 @@ export function Scene1Hero() {
       {/* Main Text Content */}
       <motion.div
         style={{ opacity, y }}
-        className="relative z-10 text-center px-6 sm:px-8 md:px-10 lg:px-12 flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12"
+        className="relative z-10 text-center px-[5vw] md:px-10 lg:px-12 flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12"
       >
         {/* Name with reduced letter spacing, staggered animation delay 0.3s */}
         <motion.h1

@@ -36,11 +36,11 @@ export function Scene2About() {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center py-20 sm:py-24 md:py-28 lg:py-36"
+      className="relative min-h-screen flex items-center justify-center py-20 md:py-28 lg:py-36 px-[5vw]"
     >
       <motion.div
         style={{ opacity, y }}
-        className="relative z-10 max-w-5xl mx-auto px-6 sm:px-8 md:px-10 lg:px-12"
+        className="relative z-10 max-w-5xl mx-auto px-[5vw] md:px-10 lg:px-12"
       >
 
         {/* Constellation */}

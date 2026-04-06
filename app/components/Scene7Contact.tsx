@@ -103,7 +103,7 @@ export function Scene7Contact() {
   };
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-6 sm:px-8 md:px-10 lg:px-12" style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-[5vw] md:px-10 lg:px-12" style={{ paddingTop: '5rem', paddingBottom: '5rem' }}>
       {/* Gradual Background Darkening */}
       <motion.div
         className="absolute inset-0 bg-black pointer-events-none"
@@ -148,7 +148,7 @@ export function Scene7Contact() {
             className="border-b"
             style={{ 
               borderColor: 'rgba(77, 124, 254, 0.3)',
-              padding: 'clamp(1.5rem, 3vw, 2rem) clamp(1.5rem, 3vw, 3rem)',
+              padding: 'clamp(1.25rem, 4vw, 2rem) clamp(1.5rem, 5vw, 3rem)',
               background: 'rgba(0, 0, 0, 0.4)',
             }}
           >
@@ -194,9 +194,9 @@ export function Scene7Contact() {
           </div>
 
           {/* Terminal Body */}
-          <div style={{ padding: 'clamp(2rem, 4vw, 4rem)' }}>
-            {/* Contact Form */}
-            <form onSubmit={handleSubmit} className="space-y-8">
+          <div style={{ padding: 'clamp(2rem, 6vw, 4rem)' }}>
+            {/* Form */}
+            <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Field */}
               <div>
                 <label
@@ -363,7 +363,7 @@ export function Scene7Contact() {
             </form>
 
               {/* Contact Information */}
-            <div className="border-t" style={{ marginTop: 'clamp(2rem, 4vw, 3.5rem)', paddingTop: 'clamp(1.25rem, 2.5vw, 2.5rem)', borderColor: 'rgba(77, 124, 254, 0.2)' }}>
+            <div className="border-t" style={{ marginTop: '2.5rem', paddingTop: '2rem', borderColor: 'rgba(77, 124, 254, 0.2)' }}>
               <p
                 className="text-center tracking-[0.15em] uppercase"
                 style={{
@@ -375,7 +375,7 @@ export function Scene7Contact() {
               >
                 {'>'} DIRECT CHANNELS
               </p>
-              <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8">
+              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
                 {/* Gmail */}
                 <a
                   href="mailto:raghavvv.dev@gmail.com"

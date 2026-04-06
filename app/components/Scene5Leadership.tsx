@@ -53,8 +53,8 @@ export function Scene5Leadership() {
   ];
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-32">
-      <motion.div style={{ opacity, y }} className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 md:px-10 lg:px-12 w-full">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center py-20 md:py-24 lg:py-32">
+      <motion.div style={{ opacity, y }} className="relative z-10 max-w-7xl mx-auto px-[5vw] md:px-10 lg:px-12 w-full">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ export function Scene5Leadership() {
               <div className="absolute inset-0 border border-white/10 bg-gradient-to-br from-white/5 to-transparent">
               </div>
 
-              <div className="relative" style={{ padding: 'clamp(2rem, 4vw, 2.5rem)' }}>
+              <div className="relative" style={{ padding: 'clamp(1.5rem, 5vw, 2.5rem)' }}>
                 <div style={{ marginBottom: 'clamp(1rem, 2vw, 1.5rem)' }}>
                   <h3 className="tracking-wider text-white" style={{ fontSize: 'clamp(1.2rem, 2vw, 1.5rem)', marginBottom: 'clamp(0.4rem, 0.8vw, 0.6rem)' }}>
                     {role.title}

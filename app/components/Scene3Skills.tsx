@@ -52,7 +52,7 @@ export function Scene3Skills() {
   const y = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [100, 0, 0, -100]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-6 sm:px-8 md:px-10 lg:px-12 py-16 sm:py-20 md:py-24 lg:py-28">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-[5vw] py-20 md:py-24 lg:py-28">
       <motion.div
         style={{ opacity, y }}
         className="w-full max-w-6xl mx-auto"
@@ -70,9 +70,10 @@ export function Scene3Skills() {
         </motion.h2>
 
         {/* Orbital Container */}
-        <div className="flex justify-center items-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
+        <div className="flex justify-center items-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 px-[5vw]">
           <div 
-            className="relative w-full max-w-xl md:max-w-2xl aspect-square cursor-pointer"
+            className="relative w-full max-w-xl md:max-w-2xl aspect-square cursor-pointer mx-auto"
+            style={{ maxWidth: '90vw' }}
             onMouseEnter={() => setIsAligned(true)}
             onMouseLeave={() => setIsAligned(false)}
             onClick={() => setIsAligned(!isAligned)}
@@ -136,12 +137,13 @@ export function Scene3Skills() {
                         rotate: -skill.alignedAngle,
                       }}
                       transition={{ duration: 0.3 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 pointer-events-none"
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 pointer-events-none z-10"
                     >
                       <div 
-                        className="px-2 md:px-3 py-1 md:py-1.5 rounded bg-black/90 border whitespace-nowrap"
+                        className="px-3 py-1.5 rounded bg-black/90 border whitespace-nowrap"
                         style={{
                           borderColor: skill.color,
+                          minWidth: 'max-content',
                         }}
                       >
                         <p className="text-xs md:text-sm text-white" style={{ letterSpacing: '0.05em' }}>
@@ -157,7 +159,7 @@ export function Scene3Skills() {
         </div>
 
         {/* Legend */}
-        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 text-xs sm:text-sm px-6">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-xs sm:text-sm px-[5vw]">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 md:w-3 md:h-3 rounded-full" style={{ backgroundColor: COLORS.ACCENT_BLUE, boxShadow: `0 0 8px ${COLORS.ACCENT_BLUE}` }} />
             <span className="text-white/70" style={{ letterSpacing: '0.05em' }}>Programming</span>
