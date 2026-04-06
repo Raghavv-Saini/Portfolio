@@ -44,7 +44,7 @@ export function Scene1Hero() {
         style={{ opacity, y }}
         className="relative z-10 text-center px-4 sm:px-6 md:px-8 flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12"
       >
-        {/* Name with 0.3em letter spacing, staggered animation delay 0.3s */}
+        {/* Name with reduced letter spacing, staggered animation delay 0.3s */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -52,12 +52,13 @@ export function Scene1Hero() {
           className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-center w-full px-4"
           style={{ 
             fontWeight: 100,
-            letterSpacing: '0.3em',
+            letterSpacing: '0.1em',
             textAlign: 'center',
             marginBottom: '0.1rem'
           }}
         >
-          RAGHAVENDRA SAINI
+          RAGHAVENDRA 
+          SAINI
         </motion.h1>
         
         {/* Tagline with 0.2em letter spacing, staggered animation delay 0.6s */}
