@@ -73,7 +73,7 @@ export function Scene3Skills() {
         <div className="flex justify-center items-center mb-8 sm:mb-12 md:mb-16 lg:mb-20 px-[5vw]">
           <div 
             className="relative w-full max-w-xl md:max-w-2xl aspect-square cursor-pointer mx-auto"
-            style={{ maxWidth: '90vw' }}
+            style={{ maxWidth: 'min(90vw, 50rem)' }}
             onMouseEnter={() => setIsAligned(true)}
             onMouseLeave={() => setIsAligned(false)}
             onClick={() => setIsAligned(!isAligned)}
