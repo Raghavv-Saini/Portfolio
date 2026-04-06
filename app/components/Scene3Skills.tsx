@@ -52,7 +52,7 @@ export function Scene3Skills() {
   const y = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [100, 0, 0, -100]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-4 py-20">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-4 py-16 sm:py-20 md:py-24 lg:py-28">
       <motion.div
         style={{ opacity, y }}
         className="w-full max-w-6xl mx-auto"
@@ -63,14 +63,14 @@ export function Scene3Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl text-center mb-12 md:mb-20"
+          className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20"
           style={{ fontWeight: 100, letterSpacing: '0.2em' }}
         >
           ORBITAL SYSTEMS
         </motion.h2>
 
         {/* Orbital Container */}
-        <div className="flex justify-center items-center mb-12 md:mb-20">
+        <div className="flex justify-center items-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
           <div 
             className="relative w-full max-w-xl md:max-w-2xl aspect-square cursor-pointer"
             onMouseEnter={() => setIsAligned(true)}
@@ -157,7 +157,7 @@ export function Scene3Skills() {
         </div>
 
         {/* Legend */}
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6 text-xs md:text-sm px-4">
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 text-xs sm:text-sm px-4">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 md:w-3 md:h-3 rounded-full" style={{ backgroundColor: COLORS.ACCENT_BLUE, boxShadow: `0 0 8px ${COLORS.ACCENT_BLUE}` }} />
             <span className="text-white/70" style={{ letterSpacing: '0.05em' }}>Programming</span>
@@ -177,7 +177,7 @@ export function Scene3Skills() {
         </div>
 
         {/* Instruction */}
-        <p className="text-center text-white/40 mt-6 text-xs md:text-sm" style={{ letterSpacing: '0.05em' }}>
+        <p className="text-center text-white/40 mt-4 sm:mt-5 md:mt-6 text-xs sm:text-sm" style={{ letterSpacing: '0.05em' }}>
           Hover or click to align and reveal all skills
         </p>
       </motion.div>

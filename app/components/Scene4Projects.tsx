@@ -188,15 +188,15 @@ export function Scene4Projects() {
   };
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center py-32">
-      <motion.div style={{ opacity, y }} className="relative z-10 max-w-6xl mx-auto px-8 w-full">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-32">
+      <motion.div style={{ opacity, y }} className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 md:px-8 w-full">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="text-5xl md:text-7xl tracking-[0.2em] text-center"
-          style={{ fontWeight: 100, marginBottom: 'clamp(4rem, 8vw, 6rem)' }}
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl tracking-[0.2em] text-center"
+          style={{ fontWeight: 100, marginBottom: 'clamp(3rem, 6vw, 6rem)' }}
         >
           MISSION LOGS
         </motion.h2>
@@ -209,7 +209,7 @@ export function Scene4Projects() {
           />
 
           {/* Projects */}
-          <div className="relative" style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(6rem, 10vw, 8rem)' }}>
+          <div className="relative" style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(4rem, 8vw, 8rem)' }}>
             {projects.map((project, i) => (
               <motion.div
                 key={i}

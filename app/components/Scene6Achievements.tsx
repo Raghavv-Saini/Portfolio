@@ -30,21 +30,21 @@ export function Scene6Achievements() {
   ];
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center py-32">
-      <motion.div style={{ opacity, y }} className="relative z-10 max-w-6xl mx-auto px-8 w-full">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-32">
+      <motion.div style={{ opacity, y }} className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 md:px-8 w-full">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="text-5xl md:text-7xl tracking-[0.2em] text-center"
-          style={{ fontWeight: 100, marginBottom: 'clamp(4rem, 8vw, 6rem)' }}
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl tracking-[0.2em] text-center"
+          style={{ fontWeight: 100, marginBottom: 'clamp(3rem, 6vw, 6rem)' }}
         >
           EXPEDITION HIGHLIGHTS
         </motion.h2>
 
         {/* Achievement pulses */}
-        <div className="flex flex-col md:flex-row items-center justify-center" style={{ gap: 'clamp(5rem, 10vw, 8rem)' }}>
+        <div className="flex flex-col md:flex-row items-center justify-center" style={{ gap: 'clamp(4rem, 8vw, 8rem)' }}>
           {achievements.map((achievement, i) => (
             <motion.div
               key={i}
@@ -56,7 +56,7 @@ export function Scene6Achievements() {
               style={{ maxWidth: '28rem' }}
             >
               {/* Pulsing signal */}
-              <div className="relative mx-auto" style={{ width: '10rem', height: '10rem', marginBottom: '2.5rem' }}>
+              <div className="relative mx-auto" style={{ width: '8rem', height: '8rem', marginBottom: '2rem' }}>
                 {/* Outer pulse ring */}
                 <motion.div
                   animate={{

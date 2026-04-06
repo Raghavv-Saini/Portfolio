@@ -36,7 +36,7 @@ export function Scene2About() {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center py-36"
+      className="relative min-h-screen flex items-center justify-center py-20 sm:py-24 md:py-28 lg:py-36"
     >
       <motion.div
         style={{ opacity, y }}
@@ -44,7 +44,7 @@ export function Scene2About() {
       >
 
         {/* Constellation */}
-        <div className="relative w-full h-80 mb-12">
+        <div className="relative w-full h-60 sm:h-72 md:h-80 mb-8 sm:mb-10 md:mb-12">
           <svg className="absolute inset-0 w-full h-full">
             {connections.map((conn, i) => {
               const from = nodes[conn.from];
@@ -94,7 +94,7 @@ export function Scene2About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl tracking-[0.18em]"
+            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl tracking-[0.18em]"
             style={{ fontWeight: 200 }}
           >
             IDENTITY SIGNAL
@@ -110,37 +110,37 @@ export function Scene2About() {
           >
 
             {/* Name */}
-            <p className="text-xl md:text-2xl tracking-wider text-white">
+            <p className="text-lg sm:text-xl md:text-2xl tracking-wider text-white">
               Raghavendra Saini
             </p>
 
             {/* Education */}
-            <p className="text-base md:text-lg leading-relaxed text-white/60">
+            <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/60">
               Dual Degree Student (B.Tech + M.Tech) in Information Technology<br />
               IIIT Gwalior · CGPA 8.29
             </p>
 
             {/* Divider */}
-            <div className="h-px w-28 bg-white/20" />
+            <div className="h-px w-20 sm:w-24 md:w-28 bg-white/20" />
 
             {/* Paragraphs */}
             <div className="flex flex-col gap-1">
 
-              <p className="text-lg md:text-xl leading-loose">
+              <p className="text-base sm:text-lg md:text-xl leading-loose">
                 I'm a developer drawn to systems that work quietly, scale seamlessly, and solve real problems.
                 I spend most of my time building backend systems and understanding how complex architectures behave under pressure.
               </p>
 
-              <p className="text-lg md:text-xl leading-loose text-white/80">
+              <p className="text-base sm:text-lg md:text-xl leading-loose text-white/80">
                 I'm particularly interested in designing systems that are not just functional, but resilient and thoughtfully engineered.
                 What drives me is curiosity — understanding how things work beneath the surface and how they can be improved.
               </p>
 
-              <p className="text-lg md:text-xl leading-loose text-white/70">
+              <p className="text-base sm:text-lg md:text-xl leading-loose text-white/70">
                 Every project I take on is an attempt to push further, learn deeper, and build something more meaningful than the last.
               </p>
 
-              <p className="text-lg md:text-xl leading-loose text-white/50 italic">
+              <p className="text-base sm:text-lg md:text-xl leading-loose text-white/50 italic">
                 I'm still early in the journey — but I intend to make it count.
               </p>
 
