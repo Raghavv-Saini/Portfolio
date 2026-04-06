@@ -52,7 +52,7 @@ export function Scene3Skills() {
   const y = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [100, 0, 0, -100]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-4 py-16 sm:py-20 md:py-24 lg:py-28">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-6 sm:px-8 md:px-10 lg:px-12 py-16 sm:py-20 md:py-24 lg:py-28">
       <motion.div
         style={{ opacity, y }}
         className="w-full max-w-6xl mx-auto"
@@ -157,7 +157,7 @@ export function Scene3Skills() {
         </div>
 
         {/* Legend */}
-        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 text-xs sm:text-sm px-4">
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 text-xs sm:text-sm px-6">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 md:w-3 md:h-3 rounded-full" style={{ backgroundColor: COLORS.ACCENT_BLUE, boxShadow: `0 0 8px ${COLORS.ACCENT_BLUE}` }} />
             <span className="text-white/70" style={{ letterSpacing: '0.05em' }}>Programming</span>

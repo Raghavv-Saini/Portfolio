@@ -40,7 +40,7 @@ export function Scene2About() {
     >
       <motion.div
         style={{ opacity, y }}
-        className="relative z-10 max-w-5xl mx-auto px-4 md:px-6"
+        className="relative z-10 max-w-5xl mx-auto px-6 sm:px-8 md:px-10 lg:px-12"
       >
 
         {/* Constellation */}

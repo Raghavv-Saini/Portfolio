@@ -21,7 +21,7 @@ export function Scene1Hero() {
   const celestialOpacity = useTransform(scrollYProgress, [0, 1], [0.4, 0.1]);
 
   return (
-    <section ref={ref} className="relative h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 md:px-8">
+    <section ref={ref} className="relative h-screen flex items-center justify-center overflow-hidden px-6 sm:px-8 md:px-10 lg:px-12">
       {/* Large Gradient Celestial Object (Planet/Black Hole) */}
       <motion.div
         style={{ scale, opacity: celestialOpacity }}
@@ -42,14 +42,14 @@ export function Scene1Hero() {
       {/* Main Text Content */}
       <motion.div
         style={{ opacity, y }}
-        className="relative z-10 text-center px-4 sm:px-6 md:px-8 flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12"
+        className="relative z-10 text-center px-6 sm:px-8 md:px-10 lg:px-12 flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12"
       >
         {/* Name with reduced letter spacing, staggered animation delay 0.3s */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 0.3, ease: [0.42, 0, 0.58, 1] }}
-          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-center w-full px-4"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-center w-full"
           style={{ 
             fontWeight: 100,
             letterSpacing: '0.1em',
@@ -57,8 +57,7 @@ export function Scene1Hero() {
             marginBottom: '0.1rem'
           }}
         >
-          RAGHAVENDRA 
-          SAINI
+          RAGHAVENDRA SAINI
         </motion.h1>
         
         {/* Tagline with 0.2em letter spacing, staggered animation delay 0.6s */}
@@ -66,7 +65,7 @@ export function Scene1Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 0.6, ease: [0.42, 0, 0.58, 1] }}
-          className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white/70 text-center w-full px-4"
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white/70 text-center w-full"
           style={{ 
             letterSpacing: '0.2em', 
             textAlign: 'center',
@@ -81,7 +80,7 @@ export function Scene1Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 0.9, ease: [0.42, 0, 0.58, 1] }}
-          className="text-sm sm:text-base md:text-lg lg:text-xl text-white/50 max-w-2xl mx-auto text-center px-4"
+          className="text-sm sm:text-base md:text-lg lg:text-xl text-white/50 max-w-2xl mx-auto text-center"
           style={{ letterSpacing: '0.05em', textAlign: 'center' }}
         >
           Building scalable systems, secure APIs, and data-driven platforms

@@ -31,7 +31,7 @@ export function Scene6Achievements() {
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-32">
-      <motion.div style={{ opacity, y }} className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 md:px-8 w-full">
+      <motion.div style={{ opacity, y }} className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 md:px-10 lg:px-12 w-full">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

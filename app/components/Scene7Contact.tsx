@@ -103,7 +103,7 @@ export function Scene7Contact() {
   };
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8" style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-6 sm:px-8 md:px-10 lg:px-12" style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
       {/* Gradual Background Darkening */}
       <motion.div
         className="absolute inset-0 bg-black pointer-events-none"
@@ -148,7 +148,7 @@ export function Scene7Contact() {
             className="border-b"
             style={{ 
               borderColor: 'rgba(77, 124, 254, 0.3)',
-              padding: 'clamp(1.5rem, 3vw, 2rem) clamp(2rem, 4vw, 3rem)',
+              padding: 'clamp(1.5rem, 3vw, 2rem) clamp(1.5rem, 3vw, 3rem)',
               background: 'rgba(0, 0, 0, 0.4)',
             }}
           >
@@ -194,7 +194,7 @@ export function Scene7Contact() {
           </div>
 
           {/* Terminal Body */}
-          <div style={{ padding: 'clamp(2.5rem, 5vw, 4rem)' }}>
+          <div style={{ padding: 'clamp(2rem, 4vw, 4rem)' }}>
             {/* Contact Form */}
             <form onSubmit={handleSubmit} className="space-y-8">
               {/* Name Field */}

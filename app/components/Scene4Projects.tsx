@@ -189,7 +189,7 @@ export function Scene4Projects() {
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-32">
-      <motion.div style={{ opacity, y }} className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 md:px-8 w-full">
+      <motion.div style={{ opacity, y }} className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 md:px-10 lg:px-12 w-full">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -245,7 +245,7 @@ export function Scene4Projects() {
                     className={`border backdrop-blur-sm bg-black/20 hover:border-[#4D7CFE]/50 transition-all duration-500 cursor-pointer ${
                       i % 2 === 0 ? 'md:col-start-1 md:row-start-1' : 'md:col-start-2'
                     }`}
-                    style={{ padding: 'clamp(2rem, 4vw, 3rem)' }}
+                    style={{ padding: 'clamp(1.5rem, 3vw, 3rem)' }}
                   >
                     {/* Summary content - always visible */}
                     <h3 className="tracking-wider" style={{ fontWeight: 100, fontSize: 'clamp(1.75rem, 3vw, 2.25rem)', marginBottom: 'clamp(0.75rem, 1.5vw, 1rem)' }}>
